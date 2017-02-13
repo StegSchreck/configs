@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=StegSchreck
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Arc-Maia-Dark
+MetacityTheme=Arc-Maia-Dark
+IconTheme=Arc-Maia
+GtkColorScheme=menu_bg: #ffffff
+CursorTheme=Breeze
+CursorSize=32
+NotificationTheme=slate
+BackgroundImage=/usr/share/backgrounds/45d4387e86dc6f214bf3ccf1f06c201cb79ba220.jpg
