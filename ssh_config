@@ -1,0 +1,9 @@
+Host nas
+    HostName nas-schreck
+    User stegschreck
+Host raspi
+    HostName StavromulaBeta
+    User pi
+Host uberspace bonalumi canopus
+    HostName canopus.uberspace.de
+    User bonalumi
