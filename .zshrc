@@ -59,8 +59,8 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux common-aliases django docker git pip python pyenv pylint virtualenv
-virtualenvwrapper)
+plugins=(archlinux common-aliases django docker extract git pip python pyenv pylint virtualenv
+virtualenvwrapper zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
