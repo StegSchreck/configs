@@ -8,11 +8,20 @@
 	br = branch
 	ci = commit
 	st = status
+	df = diff
+        dc = diff --cached
+        f = fetch
 	unstage = reset HEAD --
 	last = log -1 HEAD
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-	ls = log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate
-	ll = log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --numstat
-	lnc = log --pretty=format:'%C(yellow)%h\\ %Creset%s%Cblue\\ [%cn]'
+	hist = log --pretty=format:'%Cred%h%Creset %Cgreen%ad%Creset | %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --graph --date=short
+	ls = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %C(bold blue)<%cn>%Creset' --decorate
+	ll = log --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %C(bold blue)<%cn>%Creset' --decorate --numstat
+	lnc = log --pretty=format:'%Cred%h%Creset %s %C(bold blue)<%cn>%Creset'
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit
+	lgd = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset%n' --abbrev-commit
+	lgs = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --stat -20
+        ignored = !git ls-files -v | grep '^[[:lower:]]'
+        gource = log --pretty=format:user:%aN%n%at --reverse --raw --encoding=UTF-8 --no-renames origin/HEAD
+
 [push]
 	default = simple
