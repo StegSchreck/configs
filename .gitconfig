@@ -22,6 +22,7 @@
 	lgs = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --stat -20
         ignored = !git ls-files -v | grep '^[[:lower:]]'
         gource = log --pretty=format:user:%aN%n%at --reverse --raw --encoding=UTF-8 --no-renames origin/HEAD
+	publish = "!git push -u origin $(git branch-name)"
 
 [push]
 	default = simple
